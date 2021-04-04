@@ -1,0 +1,244 @@
+-- Instances:
+
+local GUI = Instance.new("ScreenGui")
+local LocalPlayer = Instance.new("ImageLabel")
+local LocalPlayerButton = Instance.new("TextButton")
+local LocalPlayerMenu = Instance.new("ImageLabel")
+local Fly = Instance.new("Frame")
+local FlyText = Instance.new("TextLabel")
+local CheckBox = Instance.new("TextButton")
+local Check = Instance.new("TextButton")
+local Noclip = Instance.new("Frame")
+local NoclipText = Instance.new("TextLabel")
+local CheckBox2 = Instance.new("TextButton")
+local Check2 = Instance.new("TextButton")
+
+--Properties:
+
+GUI.Name = "GUI"
+GUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+LocalPlayer.Name = "LocalPlayer"
+LocalPlayer.Parent = GUI
+LocalPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayer.BackgroundTransparency = 1.000
+LocalPlayer.BorderColor3 = Color3.fromRGB(43, 43, 43)
+LocalPlayer.Position = UDim2.new(0.0504541099, 0, 0.071906358, 0)
+LocalPlayer.Size = UDim2.new(0, 174, 0, 43)
+LocalPlayer.ZIndex = 2
+LocalPlayer.Image = "rbxassetid://3570695787"
+LocalPlayer.ImageColor3 = Color3.fromRGB(39, 39, 39)
+LocalPlayer.ScaleType = Enum.ScaleType.Slice
+LocalPlayer.SliceCenter = Rect.new(100, 100, 100, 100)
+LocalPlayer.SliceScale = 0.100
+LocalPlayer.Active = true
+LocalPlayer.Draggable = true
+
+LocalPlayerButton.Name = "LocalPlayerButton"
+LocalPlayerButton.Parent = LocalPlayer
+LocalPlayerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayerButton.BackgroundTransparency = 1.000
+LocalPlayerButton.Position = UDim2.new(0.18965517, 0, 0.162790701, 0)
+LocalPlayerButton.Size = UDim2.new(0, 108, 0, 29)
+LocalPlayerButton.ZIndex = 2
+LocalPlayerButton.Font = Enum.Font.ArialBold
+LocalPlayerButton.Text = "Local Player"
+LocalPlayerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayerButton.TextSize = 17.000
+
+LocalPlayerMenu.Name = "LocalPlayerMenu"
+LocalPlayerMenu.Parent = LocalPlayer
+LocalPlayerMenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayerMenu.BackgroundTransparency = 1.000
+LocalPlayerMenu.Position = UDim2.new(0, 0, 0.674418628, 0)
+LocalPlayerMenu.Size = UDim2.new(0, 174, 0, 434)
+LocalPlayerMenu.Image = "rbxassetid://3570695787"
+LocalPlayerMenu.ImageColor3 = Color3.fromRGB(45, 45, 45)
+LocalPlayerMenu.ScaleType = Enum.ScaleType.Slice
+LocalPlayerMenu.SliceCenter = Rect.new(100, 100, 100, 100)
+LocalPlayerMenu.SliceScale = 0.050
+
+Fly.Name = "Fly"
+Fly.Parent = LocalPlayerMenu
+Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fly.BackgroundTransparency = 1.000
+Fly.Position = UDim2.new(0, 0, 0.0460829511, 0)
+Fly.Size = UDim2.new(0, 174, 0, 42)
+
+FlyText.Name = "FlyText"
+FlyText.Parent = Fly
+FlyText.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+FlyText.BorderSizePixel = 0
+FlyText.Position = UDim2.new(0.350574702, 0, 0.0622119009, 0)
+FlyText.Size = UDim2.new(0, 105, 0, 36)
+FlyText.Font = Enum.Font.ArialBold
+FlyText.Text = "Fly"
+FlyText.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlyText.TextSize = 14.000
+
+CheckBox.Name = "CheckBox"
+CheckBox.Parent = Fly
+CheckBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+CheckBox.BorderSizePixel = 0
+CheckBox.Position = UDim2.new(0.0747126415, 0, 0.0521034561, 0)
+CheckBox.Size = UDim2.new(0, 36, 0, 36)
+CheckBox.Font = Enum.Font.SourceSans
+CheckBox.Text = " "
+CheckBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+CheckBox.TextSize = 14.000
+
+Check.Name = "Check"
+Check.Parent = CheckBox
+Check.BackgroundColor3 = Color3.fromRGB(40, 255, 36)
+Check.BorderSizePixel = 0
+Check.Position = UDim2.new(0.0833333358, 0, 0.0833333358, 0)
+Check.Size = UDim2.new(0, 30, 0, 30)
+Check.Visible = false
+Check.Font = Enum.Font.SourceSans
+Check.Text = " "
+Check.TextColor3 = Color3.fromRGB(0, 0, 0)
+Check.TextSize = 14.000
+
+Noclip.Name = "Noclip"
+Noclip.Parent = LocalPlayerMenu
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.BackgroundTransparency = 1.000
+Noclip.Position = UDim2.new(0, 0, 0.149769589, 0)
+Noclip.Size = UDim2.new(0, 174, 0, 42)
+
+NoclipText.Name = "NoclipText"
+NoclipText.Parent = Noclip
+NoclipText.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+NoclipText.BorderSizePixel = 0
+NoclipText.Position = UDim2.new(0.350574702, 0, 0.0714285746, 0)
+NoclipText.Size = UDim2.new(0, 105, 0, 36)
+NoclipText.Font = Enum.Font.ArialBold
+NoclipText.Text = "Noclip"
+NoclipText.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoclipText.TextSize = 14.000
+
+CheckBox2.Name = "CheckBox"
+CheckBox2.Parent = Noclip
+CheckBox2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+CheckBox2.BorderSizePixel = 0
+CheckBox2.Position = UDim2.new(0.0747126415, 0, 0.0521034561, 0)
+CheckBox2.Size = UDim2.new(0, 36, 0, 36)
+CheckBox2.Font = Enum.Font.SourceSans
+CheckBox2.Text = " "
+CheckBox2.TextColor3 = Color3.fromRGB(0, 0, 0)
+CheckBox2.TextSize = 14.000
+
+Check2.Name = "Check"
+Check2.Parent = CheckBox2
+Check2.BackgroundColor3 = Color3.fromRGB(40, 255, 36)
+Check2.BorderSizePixel = 0
+Check2.Position = UDim2.new(0.075670436, 0, 0.078101635, 0)
+Check2.Size = UDim2.new(0, 30, 0, 30)
+Check2.Visible = false
+Check2.Font = Enum.Font.SourceSans
+Check2.Text = " "
+Check2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Check2.TextSize = 14.000
+
+-- Scripts:
+
+local function RWUKXN_fake_script() -- LocalPlayerButton.ShowLocalPlayerMenu 
+	local script = Instance.new('LocalScript', LocalPlayerButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.LocalPlayerMenu.Visible = not script.Parent.Parent.LocalPlayerMenu.Visible
+	end)
+end
+coroutine.wrap(RWUKXN_fake_script)()
+local function UMALAEX_fake_script() -- CheckBox.FlyScript 
+	local script = Instance.new('LocalScript', CheckBox)
+
+	local Check = script.Parent:WaitForChild("Check")
+	
+	local myPlayer = game.Players.LocalPlayer
+	local myChar = myPlayer.Character
+	local myHRP = myChar:WaitForChild("HumanoidRootPart")
+	
+	local bp = Instance.new("BodyPosition", myHRP) -- Body Position that determines your location
+	bp.MaxForce = Vector3.new()
+	bp.D = 10
+	bp.P = 10000
+	
+	local bg = Instance.new("BodyGyro", myHRP) -- Body Gyro that determines your rotation
+	bg.MaxTorque = Vector3.new()
+	bg.D = 10
+	
+	local flying = false -- Determines if you're in flight or not
+	local rs = game:GetService("RunService") -- Look me up
+	local camera = game.Workspace.CurrentCamera
+	local speed = 0.5 -- Speed of flight is kind of determined by this
+	
+	function fly()
+		flying = true
+		bp.MaxForce = Vector3.new(400000,400000,400000)
+		bg.MaxTorque = Vector3.new(400000,400000,400000)
+		while flying do
+			rs.RenderStepped:wait()
+			bp.Position = myHRP.Position +((myHRP.Position - camera.CFrame.p).unit * speed)
+			bg.CFrame = CFrame.new(camera.CFrame.p, myHRP.Position)
+		end
+	end
+	
+	function endFlying()
+		bp.MaxForce = Vector3.new()
+		bg.MaxTorque = Vector3.new()
+		flying = false
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Check.Visible = true
+		fly()
+	end)
+	
+	Check.MouseButton1Click:Connect(function()
+		Check.Visible = false
+		endFlying()
+	end)
+end
+coroutine.wrap(UMALAEX_fake_script)()
+local function DWLI_fake_script() -- CheckBoxTwo.NoclipScript 
+	local script = Instance.new('LocalScript', CheckBox2)
+
+	Noclip = false
+	local Check = script.Parent.Check
+	
+	game:GetService('RunService').Stepped:Connect(function()
+		if Noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Check.Visible = true
+		Noclip = true
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+	end)
+	Check.MouseButton1Click:Connect(function()
+		Check.Visible = false
+		Noclip = false
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+	end)
+end
+coroutine.wrap(DWLI_fake_script)()
+local function ZZGXFOP_fake_script() -- GUI.Toggle 
+	local script = Instance.new('LocalScript', GUI)
+
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+	
+	mouse.KeyDown:Connect(function(key)
+		if key == "p" then
+			if script.Parent.Enabled == true then
+				script.Parent.Enabled = false
+			else
+				script.Parent.Enabled = true
+			end
+		end
+	end)
+end
+coroutine.wrap(ZZGXFOP_fake_script)()
