@@ -17,6 +17,7 @@ local Check2 = Instance.new("TextButton")
 
 GUI.Name = "GUI"
 GUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GUI.ResetOnSpawn = false
 
 LocalPlayer.Name = "LocalPlayer"
 LocalPlayer.Parent = GUI
